@@ -1,0 +1,52 @@
+.body { background-color: linear-gradient (to left, rgb(49, 3, 58), rgb(0, 0, 0));
+}
+.d-flex {
+    font-family: 'Cinzel Decorative', cursive;
+    color: antiquewhite;
+
+    &.section {
+        background-color: rgb(80, 80, 31);
+    }
+}
+@mixin fuente {
+    font-family: 'Cinzel Decorative', cursive;
+}
+.conteiner {
+    padding: 30px;
+
+    .color-texto {
+
+        @include fuente;
+        color: rgb(29, 27, 27);
+    }
+    h1 {
+        @include fuente;
+        color: rgb(29, 27, 27);
+    }
+    h4 {
+        @include fuente;
+    }
+    p {
+        font-family: 'Saira Condensed', sans-serif;
+        color: rgb(29, 27, 27);
+    }
+}
+.div.gallery {
+    margin: 40px;
+    border: 1px solid #ccc;
+    float: left;
+    color: aliceblue;
+    width: 100px;
+    height: 100%;
+    padding: 20px;
+    flex-direction: column;
+    &.gallery:hover {
+        border: 1px solid #777;
+    }
+    &.gallery.img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@import "_footer";
